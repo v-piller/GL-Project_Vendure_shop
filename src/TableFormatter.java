@@ -14,4 +14,3 @@ public class TableFormatter implements Formatter {
         return result;
     }
 }
-}
