@@ -41,5 +41,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="json-20250517" level="project" />
+    <orderEntry type="library" name="picocli-4.7.7-javadoc" level="project" />
+    <orderEntry type="library" name="picocli-4.7.7" level="project" />
   </component>
 </module>
