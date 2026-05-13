@@ -1,6 +1,6 @@
 public interface GraphQLQuery<T> {
 
-    String getQuery();
+  String getQuery();
 
-    T parseResponse(String responseBody);
+  T parseResponse(String responseBody);
 }

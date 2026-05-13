@@ -17,6 +17,7 @@ public class ProductIDQuery implements GraphQLQuery<Product> {
 
   @Override
   public Product parseResponse(String responseBody) {
+    System.out.println(responseBody); // debug
     JSONObject json = new JSONObject(responseBody);
     JSONObject product = json.getJSONObject("data").getJSONObject("product");
 
