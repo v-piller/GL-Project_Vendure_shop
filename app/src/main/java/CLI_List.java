@@ -22,8 +22,8 @@ public class CLI_List implements Callable<Integer> {
         finalUrl = "http://localhost:3000/shop-api";
       }
 
-      Client client = new Client(finalUrl);
-      List<Product> products = client.getProducts();
+      VendureService service = new VendureService(finalUrl);
+      List<Product> products = service.execute(new ProductsQuery());
 
       Formatter formatter;
 
@@ -37,7 +37,7 @@ public class CLI_List implements Callable<Integer> {
       return 0;
 
     } catch (Exception e) {
-      System.err.println("Error: " + e.getMessage());
+      e.printStackTrace();
       return 1;
     }
   }
