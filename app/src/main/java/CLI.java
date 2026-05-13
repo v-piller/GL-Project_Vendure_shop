@@ -4,7 +4,7 @@ import picocli.CommandLine.Command;
 @Command(
     name = "cli",
     description = "Vendure command line interface",
-    subcommands = {CLI_List.class})
+    subcommands = {CLI_List.class, CLI_Product.class})
 public class CLI implements Runnable {
 
   public static void main(String[] args) {
